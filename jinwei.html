@@ -1,0 +1,1127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ANG JIN WEI</title>
+
+    <base href="/About-me/">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;900&display=swap" rel="stylesheet">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              sans: ['Inter', 'sans-serif'],
+            },
+colors: {
+primary: " #f5f3ff", /* Light purple */
+primaryDark: "#A893E6",
+	    },
+          },
+        },
+      }
+    </script>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />    
+    <script src="https://www.goat1000.com/tagcanvas.min.js" type="text/javascript"></script>
+
+    <style>
+        /* Swiper Transitions */
+        .cert-swiper .swiper-slide {
+            transition: filter 0.4s ease, opacity 0.4s ease;
+        }
+        .cert-swiper .swiper-slide:not(.swiper-slide-active) {
+            filter: red(4px);
+            opacity: 0.7; 
+        }
+        .cert-swiper .swiper-slide-active {
+            filter: blur(0);
+            opacity: 1;
+        }
+
+        /* Custom Cursor for TagCanvas */
+        .cert-timeline-dot {
+            cursor: pointer;
+        }
+
+        /* Button Colors */
+        .swiper .swiper-button-next, .swiper .swiper-button-prev {
+            color: #A893E6; 
+            transform: scale(0.6); 
+        }
+        .cert-swiper .swiper-button-next, .cert-swiper .swiper-button-prev {
+            color: #C9B7F5; 
+            transform: scale(0.7);
+        }
+
+        /* Flip Card 3D Styles */
+        .perspective-1000 {
+            perspective: 1000px;
+        }
+        .preserve-3d {
+            transform-style: preserve-3d;
+        }
+        .backface-hidden {
+            -webkit-backface-visibility: hidden;
+            backface-visibility: hidden;
+        }
+        
+        /* Rotates 900 deg (2.5 spins) */
+        .rotate-y-900 {
+            transform: rotateY(900deg);
+        }
+
+        /* Mobile fixes */
+        @media (max-width: 768px) {
+            .cert-swiper .swiper-slide {
+                width: 90% !important;
+            }
+        }
+
+.mini-swiper .swiper-slide {
+  width: auto;
+}
+
+.mini-img {
+  transition: transform 0.35s ease, box-shadow 0.35s ease;
+  cursor: pointer;
+}
+
+.mini-img:hover {
+  transform: scale(2.5);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.18);
+  z-index: 10;
+}
+
+
+
+    </style>
+</head>
+<body class="bg-primary text-gray-800 font-sans overflow-x-hidden">
+    <header class="bg-primaryDark shadow-md sticky top-0 z-50"> 
+        <nav class="container mx-auto px-4 sm:px-6 py-3 sm:py-4 flex justify-between items-center">
+            <div class="text-lg sm:text-2xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-neutral-900 via-amber-500 to-yellow-400 font-serif tracking-wide">
+                ANG JIN WEI
+            </div>
+            <div class="flex gap-3 sm:gap-6 text-sm sm:text-base">
+		<a href="#experience" class="text-blue-800 hover:text-violet-100 font-medium transition-colors"><b>Experience</b></a>
+                <a href="#projects" class="text-blue-800 hover:text-violet-100 font-medium transition-colors"><b>Projects</b></a>
+		<a href="#leadership" class="text-blue-800 hover:text-violet-100 font-medium transition-colors"><b>Leadership</b></a>
+                <a href="#certs" class="text-blue-800 hover:text-violet-100 font-medium transition-colors"><b>Certs</b></a>
+                <a href="#skills" class="text-blue-800 hover:text-violet-100 font-medium transition-colors"><b>Skills</b></a>
+                <a href="#contact" class="text-blue-800 hover:text-violet-100 font-medium transition-colors"><b>Contact</b></a>
+            </div>
+        </nav>
+    </header>
+
+    <div class="w-full flex justify-center py-12 md:py-32 px-4 md:px-10">
+        <div class="container mx-auto grid grid-cols-1 md:grid-cols-[1.3fr_1fr] gap-10 md:gap-12 items-center">
+            
+            <div class="text-center md:text-left">
+                <h1 class="text-4xl md:text-7xl font-black text-gray-900 mb-4">
+                    ANG JIN WEI
+                </h1>
+                <h2 class="text-xl md:text-3xl font-semibold text-black mb-8 whitespace-normal md:whitespace-nowrap leading-snug break-words">
+                    Bachelor of Banking & Finance (Fintech) </h2>
+
+                <div class="relative mt-8 ml-2 md:ml-6 text-left inline-block md:block">
+                    <div class="absolute left-2 top-2 bottom-2 w-0.5 bg-gray-300 z-0"></div>
+                    
+                    <div class="flex flex-col gap-8">
+
+        <!-- University -->                 
+       
+                        <div class="relative flex items-start z-10 group">
+                            <div class="w-4 h-4 mt-1 bg-green-900 rounded-full shrink-0 ring-4 ring-purple-100 group-hover:ring-purple-200 transition-all"></div>
+                            <div class="ml-6">
+                                <h3 class="text-lg font-bold text-gray-900">Asia Pacific University of Technology & Innovation (APU)</h3>
+                                <p class="text-gray-700 font-medium">Bachelor of Banking & Finance with a Specialism in Financial Technology</p>
+                                <p class="text-gray-500 text-sm">2024 - 2026 (Present)</p>
+               		        <p class="mt-1 text-sm font-semibold text-purple-700">Year 2 - CGPA: 3.67</p>
+                            </div>
+                        </div>
+
+                        <div class="relative flex items-start z-10 group">
+                            <div class="w-4 h-4 mt-1 bg-gray-500 rounded-full shrink-0 ring-4 ring-purple-50 group-hover:ring-purple-200 transition-all"></div>
+                            <div class="ml-6">
+                                <h3 class="text-lg font-bold text-gray-900">Pin Hwa High School - Klang</h3>
+                                <p class="text-gray-700 font-medium">Secondary Education</p>
+                                <p class="text-gray-500 text-sm">2018 – 2023</p>
+				<p class="mt-1 text-sm font-semibold text-purple-700">UEC Results: 5A, 1B, 2C</p>
+                            </div>
+                        </div>
+                    </div> 
+                </div>
+                <div class="flex justify-center md:justify-start gap-6 mt-10 ml-0 md:ml-6">
+                    <a href="https://www.linkedin.com/in/angjinwei" target="_blank" aria-label="LinkedIn" class="text-slate-900 hover:text-violet-600 transition-transform transform hover:scale-150">
+                        <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 24 24"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+                    </a>
+                    <a href="https://github.com/jinweipro" target="_blank" aria-label="GitHub" class="text-slate-900 hover:text-violet-600 transition-transform transform hover:scale-150">
+                        <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 24 24"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+                    </a>
+                    <a href="https://wa.me/60176615900" target="_blank" aria-label="WhatsApp" class="text-slate-900 hover:text-violet-600 transition-transform transform hover:scale-150">
+                        <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+                    </a>
+                    <a href="mailto:angjinwei1213@gmail.com" aria-label="Email" class="text-slate-900 hover:text-violet-600 transition-transform transform hover:scale-150">
+                        <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg>
+                    </a>
+                </div>    
+            </div> 
+            
+            <div class="flex justify-center items-center mt-10 md:mt-0">
+                <div class="w-48 h-48 md:w-96 md:h-96 relative perspective-1000">
+                    <div id="profile-card" class="w-full h-full relative transition-transform duration-[2500ms] ease-in-out preserve-3d">
+                        <div class="absolute w-full h-full backface-hidden">
+                            <img src="Picture & Cert/Professional Picture.jpg" alt="Ang Jin Wei Professional Portrait" class="w-full h-full object-cover rounded-full shadow-2xl">
+                        </div>
+                        <div class="absolute w-full h-full backface-hidden" style="transform: rotateY(180deg);">
+                            <img src="Picture & Cert/Professional Picture.jpg" alt="Ang Jin Wei Professional Portrait" class="w-full h-full object-cover rounded-full shadow-2xl">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div> 
+    </div>
+
+
+<section id="experience" class="bg-primary py-20 px-4 md:px-10">
+  <div class="max-w-7xl mx-auto px-4 space-y-3">
+
+<!-- Section Title -->
+    <h2 class="text-3xl font-bold text-gray-900 mb-12 text-center"> My Experience
+    </h2>
+<!-- Internship-->	
+            <div class="grid md:grid-cols-[1fr_2fr] gap-6 items-center bg-white rounded-2xl shadow-lg p-6"><img src="Picture & Cert/Internship.jpeg" alt="Internship" class="w-full h-64 object-cover rounded-xl">
+                <div>
+                    <h3 class="text-2xl font-bold text-gray-900">Sustainability & Strategic Partnerships Intern </h3>
+                    <p class="text-sm text-gray-500 mb-4">Alliance Bank Malaysia Berhad · Jan 2026 – Apr 2026
+                    </p>
+
+                    <ul class="list-disc pl-5 text-gray-700 space-y-1">
+                        <li>Supported ESG initiatives, industry workshops, and strategic partnerships with external stakeholders</li>
+                        <li>Conducted market research on sustainability trends, carbon tax developments, and industry events to support business planning.</li>
+                        <li>Prepared memorandums, meeting minutes, reports, and payment documentation in compliance with internal approval processes.</li>
+						<li>Assisted in award submissions, sponsorship evaluations, and sustainability project execution.</li>
+                    </ul>
+<!-- Skills Tags-->
+        <div class="flex flex-wrap gap-2 pt-3">
+          <span class="bg-purple-100 text-purple-800 text-xs font-semibold px-2.5 py-0.5 rounded">ESG & Sustainability Research</span>
+          <span class="bg-blue-100 text-blue-800 text-xs font-semibold px-2.5 py-0.5 rounded">Data Management</span>
+          <span class="bg-green-100 text-green-800 text-xs font-semibold px-2.5 py-0.5 rounded">Project Coordination</span>
+          <span class="bg-yellow-200 text-yellow-800 text-xs font-semibold px-2.5 py-0.5 rounded">Financial Administration</span>
+		  <span class="bg-gray-200 text-gray-800 text-xs font-semibold px-2.5 py-0.5 rounded">Business Documentation</span>
+       		   </div>
+                </div>
+            </div>
+
+<!-- InvestSmart Fest -->
+            <div class="grid md:grid-cols-[1fr_2fr] gap-6 items-center bg-white rounded-2xl shadow-lg p-6"><img src="Picture & Cert/Event Crew.jpg" alt="InvestSmart Fest" class="w-full h-64 object-cover rounded-xl">
+                <div>
+                    <h3 class="text-2xl font-bold text-gray-900">Event Crew – InvestSmart® Fest
+                    </h3>
+                    <p class="text-sm text-gray-500 mb-4">
+                        Mid Valley Exhibition Centre · 2024 – 2025
+                    </p>
+
+                    <ul class="list-disc pl-5 text-gray-700 space-y-1">
+                        <li>Registered <strong>300+ visitors</strong> and compiled quick feedback summaries using Excel.</li>
+                        <li>Resolved on-site queries with an average handling time under <strong>2 minutes</strong>.</li>
+                        <li>Standardized booth information scripts, reducing repetitive questions by ~<strong>15%</strong>.</li>
+                    </ul>
+<!-- Skills Tags -->
+        <div class="flex flex-wrap gap-2 pt-3">
+          <span class="bg-purple-100 text-purple-800 text-xs font-semibold px-2.5 py-0.5 rounded">Event Operations</span>
+          <span class="bg-blue-100 text-blue-800 text-xs font-semibold px-2.5 py-0.5 rounded">Customer Engagement</span></span>
+          <span class="bg-green-100 text-green-800 text-xs font-semibold px-2.5 py-0.5 rounded">Excel Reporting</span>
+          <span class="bg-gray-200 text-gray-800 text-xs font-semibold px-2.5 py-0.5 rounded">Problem Solving</span>
+       		   </div>
+                </div>
+            </div>
+
+<!-- Hao Jiu Bu Jian Restaurant -->
+            <div class="grid md:grid-cols-[1fr_2fr] gap-6 items-center bg-white rounded-2xl shadow-lg p-6">
+                <img src="Picture & Cert/Cashier - Hao.jpg" alt="Cashier Experience"
+                     class="w-full h-64 object-cover rounded-xl">
+                <div>
+                    <h3 class="text-2xl font-bold text-gray-900">Cashier – Hao Jiu Bu Jian Restaurant </h3>
+                        <p class="text-sm text-gray-500 mb-4">Finance Assistant Role · 2023 - 2024
+                    </p>
+
+                    <ul class="list-disc pl-5 text-gray-700 space-y-1">
+                        <li>Processed <strong>150+ POS & e-payment transactions daily</strong> with 100% reconciliation accuracy.</li>
+                        <li>Investigated transaction discrepancies, reducing adjustment items by <strong>50%</strong>.</li>
+                        <li>Supported daily financial records and expense summaries for management.</li>
+                    </ul>
+<!-- Skills Tags -->
+        <div class="flex flex-wrap gap-2 pt-3">
+          <span class="bg-purple-100 text-purple-800 text-xs font-semibold px-2.5 py-0.5 rounded">POS System</span>
+          <span class="bg-blue-100 text-blue-800 text-xs font-semibold px-2.5 py-0.5 rounded">Transaction Reconciliation</span>
+          <span class="bg-green-100 text-green-800 text-xs font-semibold px-2.5 py-0.5 rounded">Cash Flow Recording</span>
+          <span class="bg-gray-200 text-gray-800 text-xs font-semibold px-2.5 py-0.5 rounded">Attention to Detail</span>
+       		   </div>
+                </div>
+            </div>
+
+<!-- Mei Qi Bakery -->
+            <div class="grid md:grid-cols-[1fr_2fr] gap-6 items-center bg-white rounded-2xl shadow-lg p-6">
+                <img src="Picture & Cert/Cashier - Barkery.jpg" alt="Bakery Cashier"
+                     class="w-full h-64 object-cover rounded-xl">
+                <div>
+                    <h3 class="text-2xl font-bold text-gray-900">
+                        Cashier – Mei Qi Bakery</h3>
+                        <span class="block text-sm text-gray-500 font-normal"></span>
+                    
+                    <p class="text-sm text-gray-500 mb-4">Financial Support Role · 2022 – 2024
+                    </p>
+
+                    <ul class="list-disc pl-5 text-gray-700 space-y-1">
+                        <li>Executed daily financial reconciliation for cash and digital payments (E-wallet), ensuring accuracy and compliance with store accounting procedures.</li>
+                        <li>Recorded daily sales and assisted in preparing basic cash flow summaries.</li>
+                        <li>Analyzed sales trends during peak seasons to assist in inventory forecasting, optimizing stock levels to meet demand and reduce wastage.</li>
+                    </ul>
+
+<!-- Skills Tags -->
+        <div class="flex flex-wrap gap-2 pt-3">
+          <span class="bg-purple-100 text-purple-800 text-xs font-semibold px-2.5 py-0.5 rounded">Customer Service</span>
+          <span class="bg-blue-100 text-blue-800 text-xs font-semibold px-2.5 py-0.5 rounded">POS System</span>
+          <span class="bg-green-100 text-green-800 text-xs font-semibold px-2.5 py-0.5 rounded">Cash Handling</span>
+          <span class="bg-gray-200 text-gray-800 text-xs font-semibold px-2.5 py-0.5 rounded">Adaptability</span>
+       		   </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+
+
+    <div id="projects" class="bg-primary py-20 px-4 md:px-10">
+        <h2 class="text-3xl md:text-4xl font-bold text-center text-gray-900 mb-6">
+            My Projects
+        </h2>
+        <div class="swiper max-w-7xl mx-auto relative pb-16">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide h-auto p-4">
+                    <div class="bg-white/90 backdrop-blur-sm border border-gray-200/60 rounded-xl shadow-[0_20px_50px_rgba(0,0,0,0.15)] hover:shadow-[0_20px_60px_rgba(0,0,0,0.3)] transition-all duration-300 overflow-hidden h-full flex flex-col hover:-translate-y-1">
+                        <img src="Picture & Cert/Economics Assignment.jpg" alt="Economics Assignment" class="w-full h-56 object-cover">
+                        <div class="p-6 flex flex-col flex-grow">
+                            <h3 class="text-2xl font-bold text-gray-900 mb-3">Macroeconomic Inflation Analysis: Malaysia vs. Singapore</h3>
+                            <div class="flex flex-wrap gap-2 mb-4">
+                                <span class="bg-orange-100 text-orange-800 text-xs font-semibold px-2.5 py-0.5 rounded">Macroeconomics</span>
+                                <span class="bg-lime-100 text-lime-800 text-xs font-semibold px-2.5 py-0.5 rounded">Research Data</span>
+                                <span class="bg-gray-200 text-gray-800 text-xs font-semibold px-2.5 py-0.5 rounded">Policy Analysis</span>
+                                <span class="bg-purple-100 text-purple-800 text-xs font-semibold px-2.5 py-0.5 rounded">Canva</span>
+                            </div>
+                            <p class="text-gray-700 mb-6 flex-grow">A comparative study of Malaysia's inflation trends (1.8% CPI) and unemployment (3.2%) versus Singapore, analyzing key monetary policies like OPR adjustments and exchange rate management.</p>
+
+                        </div>
+                    </div>
+                </div> 
+                <div class="swiper-slide h-auto p-4">
+                    <div class="bg-white/90 backdrop-blur-sm border border-gray-200/60 rounded-xl shadow-[0_20px_50px_rgba(0,0,0,0.15)] hover:shadow-[0_20px_60px_rgba(0,0,0,0.3)] transition-all duration-300 overflow-hidden h-full flex flex-col hover:-translate-y-1">
+                        <img src="Picture & Cert/BRSM Assignement.jpg	" alt="BRSM Assignment" class="w-full h-56 object-cover">
+                        <div class="p-6 flex flex-col flex-grow">
+                            <h3 class="text-2xl font-bold text-gray-900 mb-3">Digital Payments Security Study Research</h3>
+                            <div class="flex flex-wrap gap-2 mb-4">
+                                <span class="bg-orange-100 text-orange-800 text-xs font-semibold px-2.5 py-0.5 rounded">Survey</span>
+                                <span class="bg-blue-100 text-blue-800 text-xs font-semibold px-2.5 py-0.5 rounded">Google Form</span>
+                                <span class="bg-purple-100 text-purple-800 text-xs font-semibold px-2.5 py-0.5 rounded">SPSS</span>
+                            </div>
+                            <p class="text-gray-700 mb-6 flex-grow">Examined the effect of digital payment security measures on trust and continued usage among Malaysian users. Conducted survey-based research, analyzed relationships between <b>biometric authentication, two-factor authentication, and fraud detection mechanisms</b> with user retention, and provided actionable insights for both academia and industry.</p>
+
+                        </div>
+                    </div>
+                </div> 
+                <div class="swiper-slide h-auto p-4">
+                    <div class="bg-white/90 backdrop-blur-sm border border-gray-200/60 rounded-xl shadow-[0_20px_50px_rgba(0,0,0,0.15)] hover:shadow-[0_20px_60px_rgba(0,0,0,0.3)] transition-all duration-300 overflow-hidden h-full flex flex-col hover:-translate-y-1">
+                        <img src="Picture & Cert/DCBT Assignement.jpg" alt="DCBT Assignment" class="w-full h-56 object-cover">
+                        <div class="p-6 flex flex-col flex-grow">
+                            <h3 class="text-2xl font-bold text-gray-900 mb-3">Palma Trace Whitepaper (Blockchain)</h3>
+                            <div class="flex flex-wrap gap-2 mb-4">
+                                <span class="bg-red-200 text-red-800 text-xs font-semibold px-2.5 py-0.5 rounded">Canva</span>
+                                <span class="bg-indigo-100 text-indigo-800 text-xs font-semibold px-2.5 py-0.5 rounded">Blockchain Technology</span>
+                                <span class="bg-green-100 text-green-800 text-xs font-semibold px-2.5 py-0.5 rounded">Lovable App</span>
+                            </div>
+                            <p class="text-gray-700 mb-6 flex-grow">A blockchain-powered ecosystem aimed at revolutionizing Malaysia's palm oil industry through <b>end-to-end traceability, EUDR compliance, and sustainable finance solutions</b>.</p>
+                        </div>
+                    </div>
+                </div> 
+                <div class="swiper-slide h-auto p-4">
+                    <div class="bg-white/90 backdrop-blur-sm border border-gray-200/60 rounded-xl shadow-[0_20px_50px_rgba(0,0,0,0.15)] hover:shadow-[0_20px_60px_rgba(0,0,0,0.3)] transition-all duration-300 overflow-hidden h-full flex flex-col hover:-translate-y-1">
+                        <img src="Picture & Cert/Financial Econometrics.jpg" alt="Financial Econometrics Assignment" class="w-full h-56 object-cover">
+                        <div class="p-6 flex flex-col flex-grow">
+                            <h3 class="text-2xl font-bold text-gray-900 mb-3">AMD Stock Price Volatility Analysis</h3>
+                            <div class="flex flex-wrap gap-2 mb-4">
+                                <span class="bg-purple-100 text-purple-800 text-xs font-semibold px-2.5 py-0.5 rounded">EViews</span>
+                                <span class="bg-indigo-100 text-indigo-800 text-xs font-semibold px-2.5 py-0.5 rounded">Financial Econometrics</span>
+                                <span class="bg-blue-100 text-blue-800 text-xs font-semibold px-2.5 py-0.5 rounded">Excel</span>
+                                <span class="bg-green-100 text-green-800 text-xs font-semibold px-2.5 py-0.5 rounded">LSEG Workspace</span>
+                            </div>
+                            <p class="text-gray-700 mb-6 flex-grow">A quantitative study applying <b>ARIMA and GARCH(1,1) models</b> to forecast AMD stock trends and analyze volatility clustering, utilizing EViews for stationarity and cointegration testing.</p>
+
+                        </div>
+                    </div>
+                </div> 
+                <div class="swiper-slide h-auto p-4">
+                    <div class="bg-white/90 backdrop-blur-sm border border-gray-200/60 rounded-xl shadow-[0_20px_50px_rgba(0,0,0,0.15)] hover:shadow-[0_20px_60px_rgba(0,0,0,0.3)] transition-all duration-300 overflow-hidden h-full flex flex-col hover:-translate-y-1">
+                        <img src="Picture & Cert/EBFT Assignement.jpg" alt="EBFT Assignment" class="w-full h-56 object-cover">
+                        <div class="p-6 flex flex-col flex-grow">
+                            <h3 class="text-2xl font-bold text-gray-900 mb-3">Algorithmic Stock Analysis</h3>
+                            <div class="flex flex-wrap gap-2 mb-4">
+                                <span class="bg-orange-100 text-orange-800 text-xs font-semibold px-2.5 py-0.5 rounded">Pandas</span>
+                                <span class="bg-pink-100 text-pink-800 text-xs font-semibold px-2.5 py-0.5 rounded">Yahoo Finance</span>
+                                <span class="bg-yellow-100 text-yellow-800 text-xs font-semibold px-2.5 py-0.5 rounded">Python</span>
+                                <span class="bg-green-100 text-green-800 text-xs font-semibold px-2.5 py-0.5 rounded">Jupyter Notebbok</span>
+                            </div>
+                            <p class="text-gray-700 mb-6 flex-grow">A quantitative investment analysis comparing Maybank and Focus Point stocks using Python to evaluate returns, volatility, and momentum trends for data-driven portfolio recommendations.</p>
+
+                        </div>
+                    </div>
+                </div> 
+                <div class="swiper-slide h-auto p-4">
+                    <div class="bg-white/90 backdrop-blur-sm border border-gray-200/60 rounded-xl shadow-[0_20px_50px_rgba(0,0,0,0.15)] hover:shadow-[0_20px_60px_rgba(0,0,0,0.3)] transition-all duration-300 overflow-hidden h-full flex flex-col hover:-translate-y-1">
+                        <img src="Picture & Cert/FSA Assignement.jpg" alt="FSA Assignment" class="w-full h-56 object-cover">
+                        <div class="p-6 flex flex-col flex-grow">
+                            <h3 class="text-2xl font-bold text-gray-900 mb-3">Sime Darby Financial Analysis</h3>
+                            <div class="flex flex-wrap gap-2 mb-4">
+                                <span class="bg-sky-100 text-sky-800 text-xs font-semibold px-2.5 py-0.5 rounded">Statement Analysis</span>
+                                <span class="bg-red-100 text-red-800 text-xs font-semibold px-2.5 py-0.5 rounded">Ratio Analysis</span>
+                                <span class="bg-cyan-50 text-cyan-700 text-xs font-semibold px-2.5 py-0.5 rounded">PESTLE Framework</span>
+                            </div>
+                            <p class="text-gray-700 mb-6 flex-grow">A comprehensive financial analysis of Sime Darby Berhad <b>evaluating fiscal health and investment potential</b> through PESTLE frameworks, ratio analysis, and cash flow assessment.</p>
+
+                        </div>
+                    </div>
+                </div> 
+            </div>
+            <div class="swiper-pagination"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+        </div> 
+    </div> 
+
+
+
+<section id="leadership" class="py-20 px-4 md:px-10 bg-primary">
+  <div class="max-w-7xl mx-auto">
+
+    <!-- Section Title -->
+    <h2 class="text-3xl  md:text-4xl font-bold text-center text-gray-900 mb-8">Leadership & Club Experience
+    </h2>
+
+<!-- Leadership Cards -->
+    <div class="grid md:grid-cols-2 gap-10">
+
+<!-- Card 1 -->
+      <div class="relative bg-white rounded-2xl shadow-lg p-8 border-t-4 border-indigo-600 hover:-translate-y-1 transition-all duration-300">
+        
+<!-- Role Badge -->
+        <span class="inline-block mb-4 text-xs font-semibold tracking-wide text-indigo-700 bg-indigo-100 px-3 py-1 rounded-full"> Marketing Commitee· 2025 – Present
+        </span>
+
+        <h3 class="text-2xl font-bold text-gray-900 mb-2"> APU Bursa Young Investor Club (BYIC)
+        </h3>
+
+        <p class="text-gray-600 mb-6 text-sm leading-relaxed">
+          Responsible for planning and executing investor education campaigns while supporting event promotion and performance tracking.
+        </p>
+
+        <ul class="space-y-3 text-gray-700 text-sm">
+  <li>• Designed and deployed <strong>Google Forms</strong> for event registration, streamlining participant data collection and tracking.</li>
+  <li>• Developed <strong>content ideas and promotional strategies</strong> for event marketing across Instagram and online platforms.</li>
+  <li>• Designed club banners and visual assets to strengthen branding consistency and event visibility.</li>
+  <li>• Built an <strong>Excel dashboard using PivotTables</strong> to monitor registrations and campaign performance.</li>
+  <li>• Contributed to a <strong>22% increase in event sign-ups</strong> through data-driven promotion and effective content planning.</li>        
+	</ul>
+
+<!-- Skill Tags -->
+        <div class="flex flex-wrap gap-2 mt-6">
+          <span class="bg-indigo-100 text-indigo-800 text-xs font-semibold px-2.5 py-1 rounded-full">Marketing Strategy</span>
+          <span class="bg-blue-100 text-blue-800 text-xs font-semibold px-2.5 py-1 rounded-full">Excel & PivotTables</span>
+          <span class="bg-purple-100 text-purple-800 text-xs font-semibold px-2.5 py-1 rounded-full">Data Tracking</span>
+          <span class="bg-gray-200 text-gray-800 text-xs font-semibold px-2.5 py-1 rounded-full">Teamwork</span>
+        </div>
+
+<div class="mt-6">
+  <div class="swiper mini-swiper rounded-xl overflow-visible px-1">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">
+        <img src="Picture & Cert/Marketing grp.png.jpg" class="mini-img h-32 w-auto object-cover rounded-xl" alt="BYIC">
+      </div>
+      <div class="swiper-slide">
+        <img src="Picture & Cert/Marketing.png" class="mini-img h-32 w-auto object-cover rounded-xl" alt="BYIC">
+      </div>
+   	 </div>
+       </div>
+     </div>
+   </div>
+
+
+      <!-- Card 2 -->
+      <div class="relative bg-white rounded-2xl shadow-lg p-8 border-t-4 border-emerald-600 hover:-translate-y-1 transition-all duration-300">
+        
+        <!-- Role Badge -->
+        <span class="inline-block mb-4 text-xs font-semibold tracking-wide text-emerald-700 bg-emerald-100 px-3 py-1 rounded-full">
+          Publicity Committee · 2022 – 2023
+        </span>
+
+        <h3 class="text-2xl font-bold text-gray-900 mb-2">
+          Pin Hwa High School – Mid-Autumn Festival Event
+        </h3>
+
+        <p class="text-gray-600 mb-6 text-sm leading-relaxed">
+          Supported event publicity planning and visual communication for a large-scale school cultural event.
+        </p>
+
+        <ul class="space-y-3 text-gray-700 text-sm">
+          <li>• Executed publicity strategies that successfully <strong>attracted 800+ participants</strong>.</li>
+          <li>• Managed visual communication including <strong>poster design</strong> and <strong>on-site photography</strong> to capture event highlights.</li>
+          <li>• Coordinated content planning with the organizing team to enhance event engagement.</li>
+        </ul>
+
+<!-- Skill Tags -->
+        <div class="flex flex-wrap gap-2 mt-6">
+          <span class="bg-emerald-100 text-emerald-800 text-xs font-semibold px-2.5 py-1 rounded-full">Visual Design</span>
+          <span class="bg-teal-100 text-teal-800 text-xs font-semibold px-2.5 py-1 rounded-full">Event Promotion</span>
+          <span class="bg-gray-200 text-gray-800 text-xs font-semibold px-2.5 py-1 rounded-full">Team Coordination</span>
+        </div>
+<div class="mt-6">
+  <div class="swiper mini-swiper rounded-xl overflow-visible px-1">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">
+        <img src="Picture & Cert/pin hwa.jpg" class="mini-img h-32 w-auto object-cover rounded-xl" alt="BYIC">
+      </div>
+         	      </div>
+            </div>
+          </div>
+        </div>
+    </div>
+  </div>
+</section>
+
+    <div id="certs" class="bg-primary py-20 px-4 md:px-10">
+        <h2 class="text-3xl md:text-4xl font-bold text-center text-gray-900 mb-8">
+            My Certifications & Achievements
+        </h2>
+
+        <div class="container max-w-6xl mx-auto">
+            <div class="cert-swiper relative overflow-hidden">
+                <div class="swiper-wrapper">
+                 
+                    <div class="swiper-slide pb-4 md:w-3/4">
+                        <div class="bg-white rounded-xl shadow-lg mx-4 overflow-hidden">
+                            <img class="w-full h-64 object-cover cursor-pointer" src="Picture & Cert/Academic Certificate.jpg" data-full-src="Picture & Cert/Academic Certificate.jpg" alt="Certificate Placeholder">
+                            <div class="p-8">
+                                <div class="flex items-center justify-between mb-6">
+                                    <div class="flex items-center gap-4">
+                                        <div class="w-10 h-10 bg-red-900 rounded-full flex items-center justify-center shrink-0">
+                                            <span class="text-white font-bold text-xl"><b>1</b></span>
+                                        </div>
+                                        <div>
+                                            <p class="text-sm text-gray-500">Year 2024</p>
+                                            <h3 class="text-2xl font-bold text-gray-900">Vice Chancellor's List Award</h3>
+                                        </div>
+                                    </div>
+                                </div>
+                                <p class="text-lg text-gray-700 mb-4">Awarded the prestigious Vice Chancellor's List for demonstrating outstanding academic performance and excellence throughout the 2024/2025 academic year.</p>
+                                <div class="flex flex-wrap gap-2">
+                                    <span class="bg-red-100 text-gray-800 text-xs font-semibold px-3 py-1 rounded-full">Academic Excellence 🎓</span>
+                                    <span class="bg-blue-100 text-gray-800 text-xs font-semibold px-3 py-1 rounded-full">Top Performer</span>
+                                    <span class="bg-green-100 text-gray-800 text-xs font-semibold px-3 py-1 rounded-full">Honor Roll</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+  
+                    <div class="swiper-slide pb-4 md:w-3/4"> 
+                        <div class="bg-white rounded-xl shadow-lg mx-4 overflow-hidden">
+                            <img class="w-full h-64 object-cover cursor-pointer" src="Picture & Cert/1. SIDC.jpg" data-full-src="Picture & Cert/1. SIDC.jpg" alt="E-learning Certificate">
+                            <div class="p-8">
+                                <div class="flex items-center justify-between mb-6">
+                                    <div class="flex items-center gap-4">
+                                        <div class="w-10 h-10 bg-red-900 rounded-full flex items-center justify-center shrink-0">
+                                            <span class="text-white font-bold text-xl"><b>2</b></span>
+                                        </div>
+                                        <div>
+                                            <p class="text-sm text-gray-500">11 December 2025</p>
+                                            <h3 class="text-2xl font-bold text-gray-900">Capital Market Essentials Programme</h3>
+                                        </div>
+                                    </div>
+                                </div>
+                                <p class="text-lg text-gray-700 mb-4">A comprehensive overview of the Malaysian capital market, covering regulatory frameworks, market participants, and investment products.</p>
+                                <div class="flex flex-wrap gap-2">
+                                    <span class="bg-red-100 text-gray-800 text-xs font-semibold px-3 py-1 rounded-full">Capital Market</span>
+                                    <span class="bg-blue-100 text-gray-800 text-xs font-semibold px-3 py-1 rounded-full">Finance</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide pb-4 md:w-3/4">
+                        <div class="bg-white rounded-xl shadow-lg mx-4 overflow-hidden">
+                            <img class="w-full h-64 object-cover cursor-pointer" src="Picture & Cert/Bursa.jpg" data-full-src="Picture & Cert/Bursa.jpg" alt="Bursa Certificate">
+                            <div class="p-8">
+                                <div class="flex items-center justify-between mb-6">
+                                    <div class="flex items-center gap-4">
+                                        <div class="w-10 h-10 bg-red-900 rounded-full flex items-center justify-center shrink-0">
+                                            <span class="text-white font-bold text-xl"><b>3</b></span>
+                                        </div>
+                                        <div>
+                                            <p class="text-sm text-gray-500">29 November 2025</p>
+                                            <h3 class="text-2xl font-bold text-gray-900">The Fundamental & Technical Aspects of Derivatives Markets</h3>
+                                        </div>
+                                    </div>
+                                </div>
+                                <p class="text-lg text-gray-700 mb-4">Completed a specialized tutorial developed by Bursa Malaysia, focusing on the mechanics of derivatives trading, futures, options, and technical analysis strategies.</p>
+                                <div class="flex flex-wrap gap-2">
+                                    <span class="bg-red-100 text-gray-800 text-xs font-semibold px-3 py-1 rounded-full">Bursa Malaysia</span>
+                                    <span class="bg-blue-100 text-gray-800 text-xs font-semibold px-3 py-1 rounded-full">Derivatives</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide pb-4 md:w-3/4">
+                        <div class="bg-white rounded-xl shadow-lg mx-4 overflow-hidden">
+                            <img class="w-full h-64 object-cover cursor-pointer" src="Picture & Cert/AKPK Volunteer.jpg" data-full-src="Picture & Cert/AKPK Volunteer.jpg" alt="AKPK Volunteer Certificate">
+                            <div class="p-8">
+                                <div class="flex items-center justify-between mb-6">
+                                    <div class="flex items-center gap-4">
+                                        <div class="w-10 h-10 bg-red-900 rounded-full flex items-center justify-center shrink-0">
+                                            <span class="text-white font-bold text-xl"><b>4</b></span>
+                                        </div>
+                                        <div>
+                                            <p class="text-sm text-gray-500">17-19 November 2025</p>
+                                            <h3 class="text-2xl font-bold text-gray-900">APU AKPK Grow Club Red Week Booth</h3>
+                                        </div>
+                                    </div>
+                                </div>
+                                <p class="text-lg text-gray-700 mb-4">Volunteered at the APU AKPK Grow Club event, actively promoting financial literacy and debt management awareness to the student community.</p>
+                                <div class="flex flex-wrap gap-2">
+                                    <span class="bg-red-100 text-gray-800 text-xs font-semibold px-3 py-1 rounded-full">Volunteer</span>
+                                    <span class="bg-blue-100 text-gray-800 text-xs font-semibold px-3 py-1 rounded-full">Teamwork</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide pb-4 md:w-3/4">
+                        <div class="bg-white rounded-xl shadow-lg mx-4 overflow-hidden">
+                            <img class="w-full h-64 object-cover cursor-pointer" src="Picture & Cert/vilja Workshop.jpg" data-full-src="Picture & Cert/vilja Workshop.jpg" alt="Certificate Placeholder">
+                            <div class="p-8">
+                                <div class="flex items-center justify-between mb-6">
+                                    <div class="flex items-center gap-4">
+                                        <div class="w-10 h-10 bg-red-900 rounded-full flex items-center justify-center shrink-0">
+                                            <span class="text-white font-bold text-xl"><b>5</b></span>
+                                        </div>
+                                        <div>
+                                            <p class="text-sm text-gray-500">27 October 2025</p>
+                                            <h3 class="text-2xl font-bold text-gray-900">Empowering Financial Futures – The Digital Way</h3>
+                                        </div>
+                                    </div>
+                                </div>
+                                <p class="text-lg text-gray-700 mb-4">Participated in a financial literacy workshop focused on the intersection of finance and technology, exploring digital banking solutions and future financial trends.</p>
+                                <div class="flex flex-wrap gap-2">
+                                    <span class="bg-red-100 text-gray-800 text-xs font-semibold px-3 py-1 rounded-full">Fintech</span>
+                                    <span class="bg-blue-100 text-gray-800 text-xs font-semibold px-3 py-1 rounded-full">Digital Finance</span>
+                                    <span class="bg-green-100 text-gray-800 text-xs font-semibold px-3 py-1 rounded-full">Workshop</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide pb-4 md:w-3/4">
+                        <div class="bg-white rounded-xl shadow-lg mx-4 overflow-hidden">
+                            <img class="w-full h-64 object-cover cursor-pointer" src="Picture & Cert/Vespid Workshop.jpg" data-full-src="Picture & Cert/Vespid Workshop.jpg" alt="Certificate Placeholder">
+                            <div class="p-8">
+                                <div class="flex items-center justify-between mb-6">
+                                    <div class="flex items-center gap-4">
+                                        <div class="w-10 h-10 bg-red-900 rounded-full flex items-center justify-center shrink-0">
+                                            <span class="text-white font-bold text-xl"><b>6</b></span>
+                                        </div>
+                                        <div>
+                                            <p class="text-sm text-gray-500">9 October 2025</p>
+                                            <h3 class="text-2xl font-bold text-gray-900">DuitOnTrack: Global Issues & Personal Finance</h3>
+                                        </div>
+                                    </div>
+                                </div>
+                                <p class="text-lg text-gray-700 mb-4">Attended a workshop exploring the correlation between global economic events and personal financial decision-making strategies, organized by VESPID.</p>
+                                <div class="flex flex-wrap gap-2">
+                                    <span class="bg-red-100 text-gray-800 text-xs font-semibold px-3 py-1 rounded-full">Personal Finance</span>
+                                    <span class="bg-blue-100 text-gray-800 text-xs font-semibold px-3 py-1 rounded-full">Global Economy</span>
+                                    <span class="bg-green-100 text-gray-800 text-xs font-semibold px-3 py-1 rounded-full">Workshop</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide pb-4 md:w-3/4">
+                        <div class="bg-white rounded-xl shadow-lg mx-4 overflow-hidden">
+                            <img class="w-full h-64 object-cover cursor-pointer" src="Picture & Cert/Cash Flow Participation Cartificate.jpg" data-full-src="Picture & Cert/Cash Flow Participation Cartificate.jpg" alt="Certificate Placeholder">
+                            <div class="p-8">
+                                <div class="flex items-center justify-between mb-6">
+                                    <div class="flex items-center gap-4">
+                                        <div class="w-10 h-10 bg-red-900 rounded-full flex items-center justify-center shrink-0">
+                                            <span class="text-white font-bold text-xl"><b>7</b></span>
+                                        </div>
+                                        <div>
+                                            <p class="text-sm text-gray-500">18 September 2025</p>
+                                            <h3 class="text-2xl font-bold text-gray-900">Cash Flow Boardgame Competition</h3>
+                                        </div>
+                                    </div>
+                                </div>
+                                <p class="text-lg text-gray-700 mb-4">Competed in the Cash Flow Game organized by APU Accounting & Finance Club and Zeneration, demonstrating superior financial strategy and asset management skills to <strong>secure 1st Place (Champion)</strong>.</p>
+                                <div class="flex flex-wrap gap-2">
+                                    <span class="bg-red-100 text-gray-800 text-xs font-semibold px-3 py-1 rounded-full">Champion 🏆</span>
+                                    <span class="bg-blue-100 text-gray-800 text-xs font-semibold px-3 py-1 rounded-full">Financial Strategy</span>
+                                    <span class="bg-green-100 text-gray-800 text-xs font-semibold px-3 py-1 rounded-full">Investment</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide pb-4 md:w-3/4">
+                        <div class="bg-white rounded-xl shadow-lg mx-4 overflow-hidden">
+                            <img class="w-full h-64 object-cover cursor-pointer" src="Picture & Cert/MS Excel Cartificate.jpg" data-full-src="Picture & Cert/MS Excel Cartificate.jpg" alt="Certificate Placeholder">
+                            <div class="p-8">
+                                <div class="flex items-center justify-between mb-6">
+                                    <div class="flex items-center gap-4">
+                                        <div class="w-10 h-10 bg-red-900 rounded-full flex items-center justify-center shrink-0">
+                                            <span class="text-white font-bold text-xl"><b>8</b></span>
+                                        </div>
+                                        <div>
+                                            <p class="text-sm text-gray-500">16 September 2025</p>
+                                            <h3 class="text-2xl font-bold text-gray-900">Introduction to MS Excel (E-learning)</h3>
+                                        </div>
+                                    </div>
+                                </div>
+                                <p class="text-lg text-gray-700 mb-4">Completed a comprehensive course powered by Microsoft, acquiring essential skills in spreadsheet management, data organization, and core Excel functions for financial analysis.</p>
+                                <div class="flex flex-wrap gap-2">
+                                    <span class="bg-red-100 text-gray-800 text-xs font-semibold px-3 py-1 rounded-full">Microsoft Excel</span>
+                                    <span class="bg-blue-100 text-gray-800 text-xs font-semibold px-3 py-1 rounded-full">Data Analysis</span>
+                                    <span class="bg-green-100 text-gray-800 text-xs font-semibold px-3 py-1 rounded-full">Technical Skills</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide pb-4 md:w-3/4">
+                        <div class="bg-white rounded-xl shadow-lg mx-4 overflow-hidden">
+                            <img class="w-full h-64 object-cover cursor-pointer" src="Picture & Cert/Ideathon Participation Certificate.jpg" data-full-src="Picture & Cert/Ideathon Participation Certificate.jpg" alt="Certificate Placeholder">
+                            <div class="p-8">
+                                <div class="flex items-center justify-between mb-6">
+                                    <div class="flex items-center gap-4">
+                                        <div class="w-10 h-10 bg-red-900 rounded-full flex items-center justify-center shrink-0">
+                                            <span class="text-white font-bold text-xl"><b>9</b></span>
+                                        </div>
+                                        <div>
+                                            <p class="text-sm text-gray-500">18 July 2025</p>
+                                            <h3 class="text-2xl font-bold text-gray-900">Ideathon Competition</h3>
+                                        </div>
+                                    </div>
+                                </div>
+                                <p class="text-lg text-gray-700 mb-4">Participated in the high-intensity Ideathon challenge during APU Fintech Day 2025, collaborating to design innovative solutions focused on financial inclusivity and rethinking traditional finance models.</p>
+                                <div class="flex flex-wrap gap-2">
+                                    <span class="bg-red-100 text-gray-800 text-xs font-semibold px-3 py-1 rounded-full">Fintech Innovation</span>
+                                    <span class="bg-blue-100 text-gray-800 text-xs font-semibold px-3 py-1 rounded-full">Problem Solving</span>
+                                    <span class="bg-green-100 text-gray-800 text-xs font-semibold px-3 py-1 rounded-full">Presentation</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide pb-4 md:w-3/4">
+                        <div class="bg-white rounded-xl shadow-lg mx-4 overflow-hidden">
+                            <img class="w-full h-64 object-cover cursor-pointer" src="Picture & Cert/Monopoly Participation Certificate.jpg" data-full-src="Picture & Cert/Monopoly Participation Certificate.jpg" alt="Certificate Placeholder">
+                            <div class="p-8">
+                                <div class="flex items-center justify-between mb-6">
+                                    <div class="flex items-center gap-4">
+                                        <div class="w-10 h-10 bg-red-900 rounded-full flex items-center justify-center shrink-0">
+                                            <span class="text-white font-bold text-xl"><b>10</b></span>
+                                        </div>
+                                        <div>
+                                            <p class="text-sm text-gray-500">18 July 2025</p>
+                                            <h3 class="text-2xl font-bold text-gray-900">Springboard Challenge</h3>
+                                        </div>
+                                    </div>
+                                </div>
+                                <p class="text-lg text-gray-700 mb-4">Participated in the Springboard Challenge organized by Eastspring Investments, a gamified financial literacy programme simulating real-world investment scenarios and asset management strategies.</p>
+                                <div class="flex flex-wrap gap-2">
+                                    <span class="bg-red-100 text-gray-800 text-xs font-semibold px-3 py-1 rounded-full">Financial Literacy</span>
+                                    <span class="bg-blue-100 text-gray-800 text-xs font-semibold px-3 py-1 rounded-full">Investment Simulation</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                  </div>
+
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+            </div>
+
+            <div class="mt-8 px-4">
+                <div class="cert-timeline relative h-2 bg-gray-200 rounded-full">
+                    <div class="cert-timeline-fill h-full bg-[oklch(82.8%_0.111_230.318)] rounded-full" style="width: 0%;"></div>
+                    <div class="cert-timeline-dots absolute top-1/2 -translate-y-1/2 w-full flex justify-between">
+                        <span class="cert-timeline-dot w-4 h-4 bg-gray-200 rounded-full border-2 border-white transition-all"></span>
+                        <span class="cert-timeline-dot w-4 h-4 bg-gray-200 rounded-full border-2 border-white transition-all"></span>
+                        <span class="cert-timeline-dot w-4 h-4 bg-gray-200 rounded-full border-2 border-white transition-all"></span>
+                        <span class="cert-timeline-dot w-4 h-4 bg-gray-200 rounded-full border-2 border-white transition-all"></span>
+                        <span class="cert-timeline-dot w-4 h-4 bg-gray-200 rounded-full border-2 border-white transition-all"></span>
+                        <span class="cert-timeline-dot w-4 h-4 bg-gray-200 rounded-full border-2 border-white transition-all"></span>
+                        <span class="cert-timeline-dot w-4 h-4 bg-gray-200 rounded-full border-2 border-white transition-all"></span>
+                        <span class="cert-timeline-dot w-4 h-4 bg-gray-200 rounded-full border-2 border-white transition-all"></span>
+                        <span class="cert-timeline-dot w-4 h-4 bg-gray-200 rounded-full border-2 border-white transition-all"></span>
+                        <span class="cert-timeline-dot w-4 h-4 bg-gray-200 rounded-full border-2 border-white transition-all"></span>
+                    </div>
+                </div>
+                <div class="flex justify-center gap-2 mt-4">
+                    <span class="cert-counter text-sm font-semibold text-gray-600">1 / 10</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="skills" class="bg-primary py-20 px-4 overflow-hidden">
+        <div class="container max-w-6xl mx-auto text-center">
+            <h2 class="text-3xl md:text-4xl font-bold text-center text-gray-900 mb-2">
+                My Skills
+            </h2>
+
+            <div class="w-full max-w-full overflow-hidden">
+                <canvas id="skillCloud" width="1000" height="600" class="w-full h-auto">
+                    <p>Error: Your browser does not support the HTML canvas element.</p>
+                </canvas>
+            </div>
+
+            <div id="skillTags" class="hidden">
+                <ul>
+                    <li><a onclick="return false;" style="font-size: 2.25rem; color: #9333ea;">R</a></li>
+                    <li><a onclick="return false;" style="font-size: 2.25rem; color: #2563eb;">Python</a></li>
+                    <li><a onclick="return false;" style="font-size: 2.25rem; color: #f97316;">Teamwork</a></li>
+                    <li><a onclick="return false;" style="font-size: 2.25rem; color: #334155;">Regulatory Compliance</a></li>
+                    <li><a onclick="return false;" style="font-size: 2.25rem; color: #0891b2;">LSEG Workspace</a></li>
+                    <li><a onclick="return false;" style="font-size: 2.25rem; color: gold;">Microsoft Excel</a></li>
+                    <li><a onclick="return false;" style="font-size: 1.5rem; color: #ef4444;">Research</a></li>
+                    <li><a onclick="return false;" style="font-size: 1.5rem; color: #0ea5e9;">Google Form</a></li>
+                    <li><a onclick="return false;" style="font-size: 1.5rem; color: #dc2626;">E-view</a></li>
+                    <li><a onclick="return false;" style="font-size: 1.5rem; color: #ef4444;">Jupyter Notebook</a></li>
+                    <li><a onclick="return false;" style="font-size: 1.5rem; color: #ef4444;">Canva</a></li>
+                    <li><a onclick="return false;" style="font-size: 1.5rem; color: #475569;">GitHub</a></li>
+                    <li><a onclick="return false;" style="font-size: 1.5rem; color: #3b82f6;">Ratio Analysis</a></li>
+                    <li><a onclick="return false;" style="font-size: 1.5rem; color: #475569;">SPSS</a></li>
+                    <li><a onclick="return false;" style="font-size: 1.5rem; color: #374151;">Accounting</a></li>
+                    <li><a onclick="return false;" style="font-size: 1.5rem; color: #ec4899;">Fintech</a></li>
+                    <li><a onclick="return false;" style="font-size: 1.5rem; color: #16a34a;">Financial Planning</a></li>
+
+                    <li><a onclick="return false;" style="font-size: 1.25rem; color: #a855f7;">Marketing</a></li>
+                    <li><a onclick="return false;" style="font-size: 1.25rem; color: #4b5563;">Time Management</a></li>
+                    <li><a onclick="return false;" style="font-size: 1.25rem; color: #65a30d;">Data Analysis</a></li>
+                    <li><a onclick="return false;" style="font-size: 1.25rem; color: #0284c7;">Blockchain Technology</a></li>
+                    <li><a onclick="return false;" style="font-size: 1.25rem; color: #374151;">Crowdfunding</a></li>
+                    <li><a onclick="return false;" style="font-size: 1.25rem; color: #f97316;">Banking Law</a></li>
+                    <li><a onclick="return false;" style="font-size: 1.25rem; color: #4b5563;">ESG</a></li>
+                    <li><a onclick="return false;" style="font-size: 1.25rem; color: #a855f7;"Problem Solving</a></li>
+                    <li><a onclick="return false;" style="font-size: 1.25rem; color: #a855f7;">HTML</a></li>
+                    <li><a onclick="return false;" style="font-size: 1.25rem; color: #65a30d;">Financial Analysis</a></li>
+
+                    <li><a onclick="return false;" style="font-size: 1.125rem; color: #4b5563;">Cyptocurrency</a></li>
+                    <li><a onclick="return false;" style="font-size: 1.125rem; color: #a855f7;">Financial Management</a></li>
+                    <li><a onclick="return false;" style="font-size: 1.125rem; color: #06b6d4;">AI Chatbot</a></li>
+                    <li><a onclick="return false;" style="font-size: 1.125rem; color: #0369a1;">Capital Market</a></li>
+                    <li><a onclick="return false;" style="font-size: 1.125rem; color: #0284c7;">Customer Service</a></li>
+                    <li><a onclick="return false;" style="font-size: 1.125rem; color: #374151;">Banking Instruments & Procedures</a></li>
+                    <li><a onclick="return false;" style="font-size: 1.125rem; color: #22c55e;">Business Law</a></li>
+                    <li><a style="font-size:1.125rem; color:#1f7a8c;">Collaboration</a></li>      <!-- muted teal -->
+		    <li><a style="font-size:1.125rem; color:#3a5a40;">Adaptability</a></li>      <!-- forest green -->
+		    <li><a style="font-size:1.125rem; color:#6d597a;">Creativity</a></li>        <!-- dusty purple -->
+		    <li><a style="font-size:1.125rem; color:#9a3412;">Critical Thinking</a></li> <!-- burnt copper -->
+
+
+		   <li><a style="font-size:1rem; color:#4b5563;">Coping with Stress</a></li>     <!-- graphite -->
+
+
+	<li><a style="font-size:1rem; color:#0f172a;">Analytic Reasoning</a></li>     <!-- near-black navy -->
+	<li><a style="font-size:1rem; color:#1e3a8a;">Decision Making</a></li>       <!-- deep blue -->
+	<li><a style="font-size:1rem; color:#0f766e;">Risk Management</a></li>       <!-- dark teal -->
+	<li><a style="font-size:1rem; color:#7c2d12;">Credit Analysis</a></li>       <!-- dark brown-red -->
+	<li><a style="font-size:1rem; color:#065f46;">Digital Banking</a></li>       <!-- emerald deep -->
+
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div id="contact" class="w-full bg-slate-900 text-white py-12 px-4 md:px-6">
+        <div class="container mx-auto text-center">
+            
+            <h2 class="text-3xl font-bold mb-4">
+                Get In Touch
+            </h2>
+            
+            <p class="text-gray-400 mb-8 max-w-xl mx-auto text-sm leading-relaxed">
+                Feel free to reach out for collaboration, opportunities, or a quick chat.
+            </p>
+            
+            <div class="flex justify-center gap-8 items-center mb-10">
+                <a href="https://www.linkedin.com/in/angjinwei" target="_blank" aria-label="LinkedIn"
+                   class="text-slate-400 hover:text-violet-600 transition-transform transform hover:scale-150">
+                    <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+                    </svg>
+                </a>
+
+                <a href="https://github.com/jinweipro" target="_blank" rel="noopener noreferrer" aria-label="GitHub"
+                   class="text-slate-400 hover:text-violet-600 transition-transform transform hover:scale-150">
+                    <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                    </svg>
+                </a>
+
+                <a href="https://wa.me/60176615900" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp"
+                   class="text-slate-400 hover:text-violet-600 transition-transform transform hover:scale-150">
+                    <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+                    </svg>
+                </a>
+                
+                <a href="mailto:angjinwei1213@gmail.com" aria-label="Email"
+                   class="text-slate-400 hover:text-violet-600 transition-transform transform hover:scale-150">
+                    <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
+                    </svg>
+                </a>
+            </div>
+
+            <div class="pt-6 border-t border-slate-800 text-xs text-gray-500">
+                <p>&copy; 2025 ANG JIN WEI. All rights reserved.</p>
+            </div>
+        </div> 
+    </div> 
+
+    <div id="imageModal" class="fixed inset-0 bg-black bg-opacity-80 flex justify-center items-center z-[9999] hidden">
+        <div class="relative max-w-5xl max-h-[90vh] p-4">
+            <button id="closeModal" class="absolute -top-6 -right-6 text-white text-4xl font-bold leading-none hover:text-gray-300 transition-colors">&times;</button>
+            <img id="fullImage" src="" alt="Full size certificate" class="max-w-full max-h-[85vh] object-contain shadow-2xl rounded-lg">
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+      // --- Auto-Flip Profile Picture ---
+      setInterval(() => {
+          const card = document.getElementById('profile-card');
+          // Use the new 900 degree class
+          card.classList.toggle('rotate-y-900');
+      }, 4000); // Flip every 5 seconds
+
+      // --- 1. Your Original Project Swiper ---
+      const projectSwiper = new Swiper('.swiper', {
+        slidesPerView: 1, 
+        spaceBetween: 20, 
+        autoplay: {
+          delay: 3000, 
+          disableOnInteraction: false, 
+        },
+        loop: true,
+        pagination: {
+          el: '.swiper .swiper-pagination', 
+          clickable: true, 
+        },
+        navigation: {
+          nextEl: '.swiper .swiper-button-next',
+          prevEl: '.swiper .swiper-button-prev',
+        },
+        breakpoints: {
+          768: {
+            slidesPerView: 2, 
+            spaceBetween: 30
+          },
+          1024: {
+            slidesPerView: 3, 
+            spaceBetween: 30
+          }
+        }
+      });
+
+      // --- 2. Helper Function for Custom Pagination ---
+      function updatePagination(swiper) {
+        const totalSlides = swiper.slides.length; 
+        const realIndex = swiper.realIndex; 
+        
+        const counter = document.querySelector('.cert-counter');
+        if (counter) {
+          counter.innerHTML = `${realIndex + 1} / ${totalSlides}`;
+        }
+
+        const progressBarFill = document.querySelector('.cert-timeline-fill');
+        if (progressBarFill) {
+          const percentage = (realIndex / (totalSlides - 1)) * 100;
+          progressBarFill.style.width = `${percentage}%`;
+          progressBarFill.style.transition = 'width 0.3s ease-out';
+        }
+
+        const dots = document.querySelectorAll('.cert-timeline-dot');
+        dots.forEach((dot, index) => {
+          if (index === realIndex) {
+            dot.classList.add('bg-cyan-600', 'scale-125');
+            dot.classList.remove('bg-gray-200');
+          } else if (index < realIndex) {
+            dot.classList.add('bg-cyan-600');
+            dot.classList.remove('bg-gray-200', 'scale-125');
+          } else {
+            dot.classList.add('bg-gray-200');
+            dot.classList.remove('bg-cyan-600', 'scale-125');
+          }
+        });
+      }
+
+      // --- 3. Your UPDATED Certification Swiper ---
+      const certSwiper = new Swiper('.cert-swiper', {
+        effect: 'coverflow', 
+        centeredSlides: true, 
+        slidesPerView: 'auto', 
+        
+        speed: 800, 
+        
+        coverflowEffect: {
+          rotate: 20,
+          stretch: 50,
+          depth: 100,      
+          modifier: 1,      
+          slideShadows: true, 
+        },
+
+        rewind: true,
+
+        // Autoplay is configured but we'll control it manually with start()
+        autoplay: {
+          delay: 2500,
+          disableOnInteraction: false,
+        },
+        
+        navigation: {
+          nextEl: '.cert-swiper .swiper-button-next',
+          prevEl: '.cert-swiper .swiper-button-prev',
+        },
+
+        on: {
+          init: function () {
+            updatePagination(this); 
+
+            const dots = document.querySelectorAll('.cert-timeline-dot');
+            dots.forEach((dot, index) => {
+              dot.addEventListener('click', () => {
+                this.slideTo(index); 
+              });
+            });
+            
+            // Manually start autoplay
+            this.autoplay.start();
+          },
+          slideChange: function () {
+            updatePagination(this);
+          },
+        },
+      });
+
+      // --- 4. NEW: Image Modal Logic ---
+      const imageModal = document.getElementById('imageModal');
+      const fullImage = document.getElementById('fullImage');
+      const closeModalBtn = document.getElementById('closeModal');
+      // Select images specifically within the cert-swiper to avoid conflict
+      const certImages = document.querySelectorAll('.cert-swiper img'); 
+
+      let autoplayTimeout; 
+
+      function resumeAutoplay() {
+        clearTimeout(autoplayTimeout);
+        autoplayTimeout = setTimeout(() => {
+          certSwiper.autoplay.start();
+        }, 1000); // Wait 1s before resuming
+      }
+
+      certImages.forEach(img => {
+          img.addEventListener('click', function() {
+              // Pause autoplay immediately
+              certSwiper.autoplay.stop();
+              
+              // Set the modal image source
+              fullImage.src = this.dataset.fullSrc || this.src; 
+              
+              // Show the modal
+              imageModal.classList.remove('hidden');
+              imageModal.classList.add('flex');
+          });
+      });
+
+      function closeModal() {
+          imageModal.classList.add('hidden');
+          imageModal.classList.remove('flex');
+          resumeAutoplay(); 
+      }
+
+      closeModalBtn.addEventListener('click', closeModal);
+
+      // Close when clicking background
+      imageModal.addEventListener('click', function(event) {
+          if (event.target === imageModal) {
+              closeModal();
+          }
+      });
+
+      // --- 5. Initialize the 3D Skill Cloud ---
+      window.onload = function() {
+        try {
+          if(TagCanvas) {
+            TagCanvas.Start('skillCloud', 'skillTags', {
+              // --- COLOR SETTINGS ---
+              textColour: null,         
+              outlineThickness: 0.5,    
+              outlineColour: '#06b6d4', 
+              
+              // --- INTERACTION SETTINGS ---
+              activeCursor: 'default', 
+              wheelZoom: false,
+              
+              // --- ANIMATION SETTINGS ---
+              reverse: true,            
+              depth: 0.8,               
+              maxSpeed: 0.05,           
+              initial: [0.1, -0.1],     
+              fadeIn: 800,              
+              
+              // --- SIZING ---
+              weight: true,              
+              weightMode: 'size'         
+            });
+          }
+        } catch(e) {
+          document.getElementById('skillCloud').style.display = 'none';
+          document.getElementById('skillTags').style.display = 'block';
+        }
+      };
+
+  const miniSwiper = new Swiper('.mini-swiper', {
+    slidesPerView: 'auto',
+    spaceBetween: 12,
+    loop: true,
+    autoplay: {
+      delay: 3000,
+      disableOnInteraction: false,
+    },
+    speed: 800,
+  });
+
+
+
+    </script>
+</body>
+</html>
